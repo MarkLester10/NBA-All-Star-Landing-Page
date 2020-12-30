@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NBA All Star</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        font-family: "Oswald", sans-serif;
+        background-color: #07111b;
+      }
+
+      p {
+        font-weight: 200;
+        letter-spacing: 1px;
+      }
+
+      a {
+        text-decoration: none !important;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: semibold;
+        letter-spacing: 2px;
+      }
+
+      @media screen and (max-width: 480px) {
+        a {
+          font-size: 16px;
+        }
+      }
+      a:hover {
+        color: #c8102e !important;
+      }
+
+      ul {
+        list-style: none;
+      }
+
+      section {
+        padding: 40px 0;
+      }
+
+      .appBtn {
+        padding: 10px 20px;
+        border: 1px solid #c8102e;
+        display: inline-block;
+        transition: all 0.5s ease;
+        font-weight: 500;
+        letter-spacing: 1px;
+      }
+
+      .appBtn:hover {
+        background-color: #fff;
+      }
+
+      .container {
+        z-index: 5 !important;
+      }
+      .navbar {
+        background: transparent;
+        color: #fff;
+        width: 100%;
+      }
+
+      .navbar.active {
+        background-color: #07111b;
+        border-bottom: 1px solid gray;
+      }
+
+      .logo {
+        display: inline-block;
+        width: 60px;
+      }
+
+      .main-nav {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+      }
+
+      .banner {
+        height: 100vh;
+        background: url("https://cnet3.cbsistatic.com/img/NcdO0FZGyUyqnS5lJG74tO9HOwI=/1600x900/2019/02/13/3bd81000-0aa7-41d0-8eba-4682d8e26521/all-star-starters-graphic.jpg")
+          no-repeat center center/cover;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #212121;
+        opacity: 0.8;
+        z-index: 1;
+        -webkit-box-shadow: inset 21px 2px 268px 82px rgba(0, 0, 0, 1);
+        -moz-box-shadow: inset 21px 2px 268px 82px rgba(0, 0, 0, 1);
+        box-shadow: inset 21px 2px 268px 82px rgba(0, 0, 0, 1);
+      }
+
+      .banner-title {
+        color: #fff;
+        z-index: 5 !important;
+        text-align: center;
+      }
+
+      .allstar-item {
+        cursor: pointer;
+      }
+      .allstar-item:hover {
+        -webkit-box-shadow: 24px 21px 87px -9px rgba(200, 16, 46, 0.47);
+        -moz-box-shadow: 24px 21px 87px -9px rgba(200, 16, 46, 0.47);
+        box-shadow: 24px 21px 87px -9px rgba(200, 16, 46, 0.47);
+      }
+
+      .allstar-item img {
+        width: 100% !important;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .about-content {
+        text-align: center;
+        color: #fff;
+        padding: 40px;
+      }
+
+      footer {
+        border-top: 1px solid gray;
+      }
+
+      .footer-content {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 40px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <a class="navbar-brand logo" href="#">
+          <img
+            src="https://www.essentiallysports.com/wp-content/uploads/a70ef54ca39d795bfe84217aedada67d.png"
+            alt=""
+            class="img-fluid"
+          />
+        </a>
+        <div class="main-nav ms-auto">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link" href="#">Stars</a>
+          <a class="nav-link" href="#">About</a>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section class="banner">
+        <div class="overlay"></div>
+        <div class="container">
+          <div class="banner-title">
+            <h1>
+              Watch Your favorite players of all time in this year's NBA ALL
+              Star Games
+            </h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Necessitatibus, qui? Quisquam id quod ab beatae eligendi illo
+              reprehenderit esse sed, fuga rem, sapiente voluptatem. Nulla sit
+              libero molestias repudiandae. Sunt.
+            </p>
+            <a href="#" class="appBtn mt-3">Watch Live</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="allstars">
+        <div class="container">
+          <h1 class="text-white">NBA All Stars</h1>
+          <div class="row d-flex">
+            <div class="allstar-item col-md-4 my-3">
+              <img
+                src="https://cdn.vox-cdn.com/thumbor/LOJkYpC8t-TA25ZG59n7X4X4SYA=/0x0:2342x3513/1200x800/filters:focal(1276x1014:1650x1388)/cdn.vox-cdn.com/uploads/chorus_image/image/66223756/1195353260.jpg.0.jpg"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+            <div class="allstar-item col-md-4 my-3">
+              <img
+                src="https://images.complex.com/complex/images/c_fill,dpr_auto,f_auto,q_90,w_1400/fl_lossy,pg_1/jiy263olxokpgliyqiwk/lebron-james-nba-all-star-game-2020"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+            <div class="allstar-item col-md-4 my-3">
+              <img
+                src="https://media.nbcchicago.com/2019/09/GettyImages-1206757899.jpg?crop=0px%2C160px%2C2616px%2C1471px&resize=850%2C478"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+            <div class="allstar-item col-md-4 my-3">
+              <img
+                src="https://www.oddsshark.com/sites/default/files/styles/default/public/sb_news/2020/02/13/nba_allstar_game_betting_odds_feb16_2020.jpg?itok=W_3pGL3k"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+            <div class="allstar-item col-md-4 my-3">
+              <img
+                src="https://images.solecollector.com/complex/images/c_crop,h_2322,w_4128,x_0,y_138/wmpa6las9b4opg5vnywj/kawhi-leonard-nba-all-star-kobe-bryant-mvp"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+            <div class="allstar-item col-md-4 my-3">
+              <img
+                src="https://www.star-telegram.com/latest-news/pk4k4u/picture239590198/alternates/FREE_1140/AP20018204375829.jpg"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+            <div class="allstar-item col-md-4 my-3">
+              <img
+                src="https://cdn.vox-cdn.com/thumbor/HBLBu4t4ZiAZ1hKvIvX4Tm3iDL0=/0x0:3978x2927/1200x800/filters:focal(1984x764:2620x1400)/cdn.vox-cdn.com/uploads/chorus_image/image/66322422/usa_today_14053772.10.jpg"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+            <div class="allstar-item col-md-4 my-3">
+              <img
+                src="https://static.highsnobiety.com/thumbor/QZaCN1QdnsCgoXQweR2Av3SWrpc=/1600x1067/static.highsnobiety.com/wp-content/uploads/2020/01/30234002/nba-all-star-game-format-change-01.jpg"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+            <div class="allstar-item col-md-4 my-3">
+              <img
+                src="https://www.sikids.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTY4Mjg2ODY0MDUzNjQyNTE3/first-look-2016-nba-all-star-game-gear.jpg"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about">
+        <div class="container">
+          <div class="about-content">
+            <h1>About</h1>
+            <p class="py-3">
+              The National Basketball Association All-Star Game is a basketball
+              exhibition game hosted every February by the National Basketball
+              Association and showcases 24 of the league's star players. It is
+              the featured event of NBA All-Star Weekend, a three-day event
+              which goes from Friday to Sunday.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <a class="logo" href="#">
+            <img
+              src="https://www.essentiallysports.com/wp-content/uploads/a70ef54ca39d795bfe84217aedada67d.png"
+              alt=""
+              class="img-fluid"
+            />
+          </a>
+          <div class="socials py-4">
+            <a href="#">
+              <i class="fab fa-facebook-f fa-2x px-4"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-twitter fa-2x px-4"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-instagram fa-2x px-4"></i>
+            </a>
+          </div>
+          <p class="text-white">Copyright 2020</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const navbar = document.querySelector(".navbar");
+
+      window.addEventListener("scroll", function () {
+        if (window.scrollY > 50) {
+          navbar.classList.add("active");
+        } else {
+          navbar.classList.remove("active");
+        }
+      });
+    </script>
+  </body>
+</html>
